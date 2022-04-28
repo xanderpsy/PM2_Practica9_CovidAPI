@@ -11,16 +11,27 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tablaPaises: UITableView!
     var covidManager = CovidManager()
+    //arreglo para llenar tabla
+    var listaPaises:[CovidDatos] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         tablaPaises.delegate = self
         tablaPaises.dataSource = self
+        covidManager.delegado = self
         //instanciando
         covidManager.buscarEstadisticas()
+        
     }
 
 
+}
+extension ViewController: covidManagerDelegado{
+    func actualizar(paises: [CovidDatos]) {
+        listaPaises = paises
+        
+        tablaPaises.reloadData()
+    }
 }
 
 //func buscarEstadisticas(){
@@ -43,14 +54,14 @@ class ViewController: UIViewController {
 // Alex-tableView
 extension ViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return listaPaises.cout
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celda = tablaPaises.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
         celda.textLabel?.text = "Mexico"
         celda.detailTextLabel?.text = "345634"
-        celda.imageView?.image = UIImage()
+        celda.imageView?.image = UIImage(systemName: "flag")
         return celda
     }
     

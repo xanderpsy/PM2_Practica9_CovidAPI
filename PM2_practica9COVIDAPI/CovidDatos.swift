@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CovidDAtos: Decodable{
+struct CovidDatos: Decodable{
     let country: String?
     let active: Double?
     let countryInfo: CountryInfo?
