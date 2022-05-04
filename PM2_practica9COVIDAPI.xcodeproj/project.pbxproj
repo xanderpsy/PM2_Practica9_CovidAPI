@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		747921712822254800A4620F /* VistaDetalladaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747921702822254800A4620F /* VistaDetalladaViewController.swift */; };
+		7483EE9F2820E30B00B72B6D /* CeldaPaissTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7483EE9D2820E30B00B72B6D /* CeldaPaissTableViewCell.swift */; };
+		7483EEA02820E30B00B72B6D /* CeldaPaissTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7483EE9E2820E30B00B72B6D /* CeldaPaissTableViewCell.xib */; };
 		74A9C25E2816E36D0032A97B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A9C25D2816E36D0032A97B /* AppDelegate.swift */; };
 		74A9C2602816E36D0032A97B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A9C25F2816E36D0032A97B /* SceneDelegate.swift */; };
 		74A9C2622816E36D0032A97B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A9C2612816E36D0032A97B /* ViewController.swift */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		747921702822254800A4620F /* VistaDetalladaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDetalladaViewController.swift; sourceTree = "<group>"; };
+		7483EE9D2820E30B00B72B6D /* CeldaPaissTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPaissTableViewCell.swift; sourceTree = "<group>"; };
+		7483EE9E2820E30B00B72B6D /* CeldaPaissTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CeldaPaissTableViewCell.xib; sourceTree = "<group>"; };
 		74A9C25A2816E36D0032A97B /* PM2_practica9COVIDAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PM2_practica9COVIDAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A9C25D2816E36D0032A97B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74A9C25F2816E36D0032A97B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +81,9 @@
 				74A9C2732816E6C40032A97B /* CovidDatos.swift */,
 				74A9C2752816E7EE0032A97B /* CovidModelo.swift */,
 				74A9C2772816EA660032A97B /* CovidManager.swift */,
+				7483EE9D2820E30B00B72B6D /* CeldaPaissTableViewCell.swift */,
+				7483EE9E2820E30B00B72B6D /* CeldaPaissTableViewCell.xib */,
+				747921702822254800A4620F /* VistaDetalladaViewController.swift */,
 			);
 			path = PM2_practica9COVIDAPI;
 			sourceTree = "<group>";
@@ -137,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7483EEA02820E30B00B72B6D /* CeldaPaissTableViewCell.xib in Resources */,
 				74A9C26A2816E3710032A97B /* LaunchScreen.storyboard in Resources */,
 				74A9C2672816E3710032A97B /* Assets.xcassets in Resources */,
 				74A9C2652816E36D0032A97B /* Main.storyboard in Resources */,
@@ -154,7 +164,9 @@
 				74A9C2762816E7EE0032A97B /* CovidModelo.swift in Sources */,
 				74A9C2722816E6800032A97B /* File.swift in Sources */,
 				74A9C2782816EA660032A97B /* CovidManager.swift in Sources */,
+				7483EE9F2820E30B00B72B6D /* CeldaPaissTableViewCell.swift in Sources */,
 				74A9C25E2816E36D0032A97B /* AppDelegate.swift in Sources */,
+				747921712822254800A4620F /* VistaDetalladaViewController.swift in Sources */,
 				74A9C2602816E36D0032A97B /* SceneDelegate.swift in Sources */,
 				74A9C2742816E6C40032A97B /* CovidDatos.swift in Sources */,
 			);

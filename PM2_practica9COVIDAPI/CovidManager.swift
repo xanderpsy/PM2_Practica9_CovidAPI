@@ -7,26 +7,30 @@
 
 import Foundation
 
-protocol covidManagerDelegado{
-    func actualizar()
+protocol covidManagerprotocol {
+    func cargarDatos(paises: [CovidDatos])
+    func huboError(cualError:String)
 }
 struct CovidManager{
-    var delegado: covidManagerDelegado?
+    var delegado: covidManagerprotocol?
     
     func buscarEstadisticas(){
         let urlString = "https://corona.lmao.ninja/v3/covid-19/countries/"
+        
         if let url = URL(string: urlString){
             let session = URLSession(configuration: .default)
+            
             let tarea = session.dataTask(with: url) { datos, respuesta, error in
+                
                 if error != nil{
-                    print()
+                    delegado?.huboError(cualError: error!.localizedDescription)
                 }
                 if let datosSeguros = datos{
-                    print("datos seguros")
-                    print(datosSeguros)
-                    print("respuesta\(respuesta)")
+                    
+                    if let listaPaises = self.parcearJSON(datosCovid: datosSeguros){
+                                            delegado?.cargarDatos(paises: listaPaises)
+                                        }
                 }
-            
             }
             tarea.resume()
         }
